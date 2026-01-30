@@ -1,0 +1,171 @@
+/* 変数設定 */
+$main-color: #6b4f4f;
+$text-color: #333;
+$bg-gray: #f5f5f5;
+
+/* リセット */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    color: $text-color;
+}
+
+/* ボタン */
+.btn{
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: $main-color;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+
+    &--contact {
+        padding: 14px 40px;
+        font-weight: bold;
+    }
+}
+
+/* fv */
+.fv{
+  height: 100vh;
+  background: {
+    image: url("images/fv.jpg");
+    size: cover;
+    position: center;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-inner{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    text-align: center;
+    max-width: 1000px;
+    width: 90%;
+  }
+
+  .fv-title {
+        font-size: clamp(28px, 4vw, 48px);
+        line-height: 1.4;
+        text-align: center;
+        white-space: nowrap;
+
+        span {
+            display: inline;
+        }
+
+        @media (max-width: 1100px) {
+            white-space: normal;
+        }
+
+        @media (max-width: 768px) {
+            .break {
+                display: block;
+            }
+        }
+    }
+
+    .fv-lead {
+        font-size: 16px;
+        line-height: 1.8;       
+
+        .lead-top {
+            display: inline;
+        }
+
+        @media (max-width: 768px) {
+            .lead-top{
+                display: block;
+            }
+        }
+    }
+
+  p{
+    margin-bottom: 24px;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    height: 100svh;
+
+    &-inner{
+      padding: 24px;
+    }
+  }
+}
+
+
+/* section */
+section{
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 28px;
+    }
+}
+
+/* concept */
+.concept{
+    text-align: center;
+
+    ul{
+        display: inline-block;
+        text-align: left;
+        margin-top: 16px;
+    }
+}
+
+
+/* menu */
+.menu{
+    &-list{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &-item{
+        background: $bg-gray;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        word-break: keep-all;
+        line-height: 1.4;
+    }
+}
+
+/* access */
+.access{
+    text-align: center;
+    p{
+        margin-top: 8px;
+    }
+} 
+
+/* contact */
+.contact {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f7f4f2;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+} 

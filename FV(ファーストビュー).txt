@@ -1,0 +1,25 @@
+FV（ファーストビュー）
+  h1 キャッチコピー
+  p サブコピー
+  a CTAボタン
+
+Concept
+  h2 コンセプト
+  p 説明文
+  ul 特徴3つ
+
+Menu
+  h2 メニュー
+  div メニューカード ×3
+
+Access
+  h2 店舗情報
+  p 営業時間
+  p 住所（架空）
+
+CTA
+  h2 ご予約・お問い合わせ
+  a CTAボタン
+
+Footer
+  small コピーライト
