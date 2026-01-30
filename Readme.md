@@ -30,3 +30,6 @@
 - メニューセクションへの画像追加
 - JavaScriptによる簡単な動きの追加
 - 実店舗サイトを想定した構成への発展
+
+## URL
+- https://kazfiles.github.io/lp-cafe/
